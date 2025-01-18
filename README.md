@@ -1,10 +1,13 @@
 # Forecast-WeatherML
-Forecast Weather isimli hava durumu sitesinden veri kazıyıp sıcaklık tahmini yapan model
-# Hava Durumu Tahmini Projesi
 
-Bu projede, **San Francisco Downtown**'dan alınan hava durumu verileri ile sıcaklık tahminleri yapılmaktadır. Proje, farklı regresyon modelleri kullanarak, hava durumu verilerinden gelecekteki sıcaklık tahminlerini yapmayı amaçlar. Veri seti, **4-5 yıl** civarında bir zaman dilimini kapsamaktadır, ancak veri seti tarih aralığına göre esneklik gösterecek şekilde arttırılabilir ve azaltılabilir.
+**Forecast Weather** isimli hava durumu sitesinden alınan **San Francisco Downtown**'a ait geçen 5 yılın sıcaklık verileri ve bu sıcaklığa etki eden faktörler elde edilmiştir. Bu veriler üzerinde çeşitli **data hazırlama teknikleri** kullanılarak model eğitimi için uygun hale getirilmiştir. Proje kapsamında 3 farklı regresyon modeli kullanılarak sıcaklık tahminleri yapılmıştır. Sonuçlar kapsamlı bir şekilde analiz edilmiştir.
 
+### 2. Veri Seti ve Kaynağı
 Veri setine ait hava durumu verilerine şu linkten ulaşılabilir: [San Francisco Downtown Hava Durumu Tahmin Verisi](https://forecast.weather.gov/MapClick.php?lat=37.7749&lon=-122.4194)
+
+### Kullanılan Veri Setleri:
+- **gecmis_hava_durumu.csv**: Kazıma yöntemiyle elde edilen hava durumu verileri.
+- **güncellenmis_hava_durumu.csv**: Model eğitiminde kullanılan işlenmiş veri seti.
 
 ## Kullanılan Modeller
 - **Linear Regression (Doğrusal Regresyon)**
@@ -40,15 +43,31 @@ Veri seti **4-5 yıl** süresine ait olduğu için, model doğruluğu, kullanıl
   - **Linear Regression:** **%90** civarında
   - **Passive Aggressive:** **%88** civarında
 
+
 ## Sonuçlar
 - **En İyi Model:** **Random Forest** modeli, en yüksek doğruluğa sahip model olup **%97.97** doğruluk oranı elde etmiştir.
 - **Linear Regression** ise **%96.98** doğruluk oranı ile başarılı bir modeldir.
 - **Passive Aggressive Regressor** ise **%94.92** doğruluk oranına sahip olup, daha hızlı çalışmasıyla dikkat çekmektedir.
+![image](https://github.com/user-attachments/assets/635f126d-09d6-418d-b086-58df9360c8fd)
+
 
 ## Veri Setinin Güncellenebilirliği
 - Şu an görmekte olduğunuz veri seti, **4-5 yıl** civarına ait verilerdir. Ancak bu set, istediğiniz tarihlere göre arttırılabilir ya da azaltılabilir. **1-2 yıllık** veri seti kullanıldığında, doğruluk oranları şu şekilde gerçekleşmektedir:
   - **Random Forest** ve **Linear Regression** modelleri için **%90** civarında doğruluk oranı elde edilmektedir.
   - **Passive Aggressive Regressor** modeli de **%88** doğruluk seviyelerine yakın sonuçlar vermektedir.
+    
+### Sonuç:
+Bu proje, hava durumu verilerinden sıcaklık tahminleri yapmak için kullanılan üç farklı regresyon modelini karşılaştırarak, her birinin doğruluğunu değerlendirmiştir. **Random Forest Regressor**, en yüksek doğruluğu sağlayarak modelleme sürecinde en güçlü seçenek olmuştur. **Linear Regression**, daha basit ve hızlı çözümler arayanlar için uygun olsa da, karmaşık veri setlerinde doğruluk açısından yetersiz kalabilmektedir. **Passive Aggressive Regressor** ise, özellikle düşük iterasyonlarla çalışabilen, ancak zaman zaman yüksek doğruluk sağlamayan bir model olarak öne çıkmaktadır.
+
+Bu doğrultuda, önerilen iyileştirmelerle model doğruluğu artırılabilir ve daha doğru sıcaklık tahminleri yapılabilir.
+
+## Gelecekteki Çalışmalar
+- Daha fazla hava durumu verisi toplayarak modelin doğruluğunu daha da artırmak.
+- Farklı özelliklerin (yağış, nem, rüzgar yönü gibi) dahil edilmesiyle modelin genel başarısını test etmek.
+- Diğer makine öğrenmesi teknikleriyle, örneğin derin öğrenme modelleriyle karşılaştırmalar yaparak daha gelişmiş tahminler elde etmek.
+
+
 
 Bu proje, hava durumu verilerinin işlenmesi ve farklı regresyon modelleri ile sıcaklık tahminleri yapılmasını sağlayarak, hava tahmini konusundaki farklı yöntemlerin karşılaştırılmasını sunmaktadır.
+
 
