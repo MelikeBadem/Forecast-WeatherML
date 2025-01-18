@@ -70,11 +70,10 @@ Bu doğrultuda, önerilen iyileştirmelerle model doğruluğu artırılabilir ve
 - Farklı özelliklerin (yağış, nem, rüzgar yönü gibi) dahil edilmesiyle modelin genel başarısını test etmek.
 - Diğer makine öğrenmesi teknikleriyle, örneğin derin öğrenme modelleriyle karşılaştırmalar yaparak daha gelişmiş tahminler elde etmek.
 
-## İzlemek İçin
-
+## Youtube Videosu
 Videoyu izlemek için aşağıdaki linke tıklayınız:
 
-[İzle](https://youtu.be/G6E1wbuEHT4?si=8V3TfBL0xRKiFBmG)
+(https://youtu.be/G6E1wbuEHT4?si=8V3TfBL0xRKiFBmG)
 
 
 Bu proje, hava durumu verilerinin işlenmesi ve farklı regresyon modelleri ile sıcaklık tahminleri yapılmasını sağlayarak, hava tahmini konusundaki farklı yöntemlerin karşılaştırılmasını sunmaktadır.
