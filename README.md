@@ -10,11 +10,15 @@ Veri setine ait hava durumu verilerine şu linkten ulaşılabilir: [San Francisc
 - **güncellenmis_hava_durumu.csv**: Model eğitiminde kullanılan işlenmiş veri seti.
 
 ## Kullanılan Modeller
-- **Linear Regression (Doğrusal Regresyon)**
-- **Random Forest Regressor**
-- **Passive Aggressive Regressor**
+
+- **Linear Regression (Doğrusal Regresyon)**: Bağımsız değişkenlerle bağımlı değişken arasındaki doğrusal ilişkiyi kullanarak tahmin yapar.
+
+- **Random Forest Regressor (Rastgele Orman Regresyonu)**: Birden fazla karar ağacının birleşiminden tahminler yapar ve daha sağlam sonuçlar sunar.
+
+- **Passive Aggressive Regressor (Pasif Agresif Regresyon)**: Hızla öğrenir ve veri akışındaki değişikliklere hızlıca uyum sağlar, büyük veri setlerinde etkili olur.
 
 Bu modeller, hava durumu verilerinden sıcaklık tahmini yapmak için karşılaştırılmıştır. Modellerin doğruluk oranları, farklı özelliklerin modele dahil edilmesiyle elde edilmiştir.
+
 
 ## Veri Seti
 Veri seti, San Francisco'nun Downtown bölgesine ait hava durumu verilerini içerir. Bu veriler, tarih, zaman dilimi (gün ve gece), hava durumu özeti, sıcaklık ve rüzgar hızı gibi temel özellikleri içerir.
