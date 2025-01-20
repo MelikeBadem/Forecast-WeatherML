@@ -1,6 +1,6 @@
 # Forecast-WeatherML
 
-**Forecast Weather** isimli hava durumu sitesinden alınan **San Francisco Downtown**'a ait geçen 5 yılın sıcaklık verileri ve bu sıcaklığa etki eden faktörler elde edilmiştir. Bu proje, hava durumu tahminlerinde kullanılan **Machine Learning (ML)** yöntemlerini uygulamak ve analiz etmek için geliştirilmiştir. Proje kapsamında veriler üzerinde **veri hazırlama, temizleme, görselleştirme ve modelleme** adımları gerçekleştirilmiştir. Ayrıca, 3 farklı regresyon modeli ile sıcaklık tahminleri yapılmış ve modellerin performansları karşılaştırılmıştır.
+**Forecast Weather** isimli hava durumu sitesinden alınan **San Francisco Downtown**'a ait geçen 5 yılın sıcaklık verileri ve bu sıcaklığa etki eden faktörler elde edilmiştir. Bu proje, hava durumu tahminlerinde kullanılan **Machine Learning (ML)** yöntemlerini uygulamak ve analiz etmek için geliştirilmiştir. Proje kapsamında veriler üzerinde **veri hazırlama, temizleme, görselleştirme ve modelleme** adımları gerçekleştirilmiştir. Ayrıca, 3 farklı regresyon modeli ve 1 kümeleme algoritması ile sıcaklık tahminleri yapılmış ve modellerin performansları karşılaştırılmıştır.
 
 ---
 
@@ -27,7 +27,7 @@ Bu projenin amacı, geçmiş hava durumu verilerini analiz ederek sıcaklık tah
 ---
 
 ## 2. Veri Seti ve Kaynağı
-Yaklaşık 20.000 sütun içeren bir veri seti elde edilmiştir. Bu veri setine ait hava durumu verilerine aşağıdaki linkten ulaşılabilir:
+Yaklaşık 20.000 satır içeren bir veri seti elde edilmiştir. Bu veri setine ait hava durumu verilerine aşağıdaki linkten ulaşılabilir:
 - [San Francisco Downtown Hava Durumu Tahmin Verisi](https://forecast.weather.gov/MapClick.php?lat=37.7749&lon=-122.4194)
 
 ### Kullanılan Veri Setleri:
@@ -168,7 +168,7 @@ KMeans algoritması ile elde edilen **Silhouette skoru** 0 ile 1 arasında bir d
 - Küme içindeki benzerlikler ve küme dışındaki farklılıklar belirgin şekilde ayırt edilebilmektedir.
 
 ### Sonuç:
-- KMeans algoritması, 4 küme sayısıyla oldukça başarılı bir kümeleme performansı göstermiştir. Bu, verinizin kümelenebilir bir yapıya sahip olduğunu ve kümeler arasındaki farklılıkların belirgin olduğunu gösterir.
+- KMeans algoritması, 4 küme sayısıyla oldukça başarılı bir kümeleme performansı göstermiştir. Bu, verinin kümelenebilir bir yapıya sahip olduğunu ve kümeler arasındaki farklılıkların belirgin olduğunu gösterir.
 
 ## Grafikler ve Değerlendirme
 
@@ -186,7 +186,7 @@ Grafiklerde, her bir modelin **gerçek değerler** ile **tahmin edilen değerler
 - **Passive Aggressive** modelinde ise, doğrusal ilişkilerle tahmin yapabilme yeteneği sınırlıdır ve daha fazla sapma gözlenmiştir.
 - **Kmeans Algoritması** , veri setini belirli sayıda kümeye ayırmada oldukça başarılı olmuştur. Kümeleme sırasında, verinin doğal yapısındaki benzerlikleri ve farklılıkları etkili bir şekilde yakalayabilmiştir.
 
-Bu proje, farklı regresyon modelleri ve kümeleme modelinin karşılaştırılmasını sağlamakta olup, Random Forest modelinin doğruluk oranı açısından en başarılı sonuçları verdiğini ortaya koymaktadır.
+Bu proje, farklı regresyon modelleri ve kümeleme algoritmasının karşılaştırılmasını sağlamakta olup, Random Forest modelinin doğruluk oranı açısından en başarılı sonuçları verdiğini ortaya koymaktadır.
 
 
 ---
