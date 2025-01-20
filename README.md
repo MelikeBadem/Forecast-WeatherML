@@ -63,6 +63,7 @@ Projede hava durumu tahmini için aşağıdaki regresyon modelleri kullanılmı�
 1. **Linear Regression**
 2. **Random Forest Regressor**
 3. **Passive Aggressive Regressor**
+4. **Kmeans Algoritması**
 
 ---
 
@@ -97,6 +98,7 @@ Her mevsim için veri setine `Yaz`, `Serin` ve `Kış` adında üç yeni sütun 
 | **Random Forest**         | %97.97            |
 | **Linear Regression**     | %96.98            |
 | **Passive Aggressive**    | %94.92            |
+| **Kmeans Algoritması**    | %79.16            |
 
 Model, 5 yıllık veriler üzerinde eğitilmiştir. Eğitim verisi, **2020-12-01** ile **2025-01-20** tarihleri arasındaki verileri kapsamaktadır. Bu tarih aralığı, **forecast.ipynb** dosyasındaki aşağıdaki satırlarda belirlenebilir:
 
@@ -143,6 +145,30 @@ Random Forest modeli, tahmin sonuçlarını gerçek değerlere oldukça yakın y
 
 ### 3. Passive Aggressive:
 Passive Aggressive modelinde, tahmin edilen değerlerin çoğunluğu gerçek değerlere yakın olsa da, bu modelde daha fazla sapma gözlenmiştir. Bu model, doğrusal ilişkileri öğrenmede etkin olabilir ancak, veri setindeki karmaşık yapılar ve doğrusal olmayan ilişkiler karşısında daha zayıf kalmıştır.
+
+# KMeans Algoritması Sonuçları ve Silhouette Skoru Yorumları
+
+### 4. KMeans Algoritması
+
+KMeans algoritması ile elde edilen **Silhouette skoru** 0 ile 1 arasında bir değere sahiptir ve genellikle 0.7 ve üzerindeki değerler **"iyi"** kabul edilir. Bu durumda elde edilen **0.7916**'lık skor, kümeleme modelinin **iyi bir şekilde çalıştığını** ve verilerin kümelerine **iyi bir şekilde uyduğunu** gösterir.
+
+#### Yüksek Silhouette Skoru:
+- **Silhouette skoru 0 ile 1 arasında bir değere sahiptir.** Yüksek bir skor, kümeleme işleminin başarılı olduğunu ve kümeler arasındaki ayrımın net olduğunu gösterir.
+- Bu durumda elde edilen **0.7916**'lık skor, kümeleme modelinin iyi bir performans sergilediğini ve verilerin kümelere yüksek bir uyum sağladığını ortaya koymaktadır.
+
+#### Ayrıklık ve Uyum:
+- **Bu skor, kümelerin birbirinden net bir şekilde ayrıldığını** ve aynı küme içindeki verilerin birbirine oldukça benzer olduğunu gösterir.
+- Yani, kümeler arasındaki mesafeler büyük ve her küme içinde **benzer veriler** bulunmaktadır. Bu da modelin doğru şekilde kümeleri ayırdığını gösterir.
+
+#### Veri Yapısı:
+- Bu skor, **verinin kümeler oluşturulabilir bir yapıda olduğunu**, yani verinin doğal olarak birkaç ana gruba ayrılabileceğini düşündürmektedir.
+  
+#### Kümülatif Yorum:
+- **Model Başarısı:** Kümeleme algoritması, 4 küme ile oldukça iyi bir performans göstermiştir ve **0.7916'lık bir Silhouette skoru**, modelin kümeleme işleminin genellikle doğru ve uygun olduğunu ortaya koymaktadır.
+- Küme içindeki benzerlikler ve küme dışındaki farklılıklar belirgin şekilde ayırt edilebilmektedir.
+
+### Sonuç:
+- KMeans algoritması, 4 küme sayısıyla oldukça başarılı bir kümeleme performansı göstermiştir. Bu, verinizin kümelenebilir bir yapıya sahip olduğunu ve kümeler arasındaki farklılıkların belirgin olduğunu gösterir.
 
 ## Grafikler ve Değerlendirme
 
