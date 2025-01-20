@@ -148,6 +148,9 @@ Passive Aggressive modelinde, tahmin edilen değerlerin çoğunluğu gerçek de�
 
 ![image](https://github.com/user-attachments/assets/74d62da0-9aea-45ba-8baa-62b24858308d)
 
+![image](https://github.com/user-attachments/assets/0f739f6f-2280-4296-85a0-7ae603535d59)
+
+
 Grafiklerde, her bir modelin **gerçek değerler** ile **tahmin edilen değerler** arasındaki ilişkiyi gösteren görseller bulunmaktadır. Kırmızı kesikli çizgi, tahminlerin ideal olarak yer alması gereken doğrusal ilişkiyi temsil etmektedir.
 
 ## Sonuç
