@@ -59,7 +59,7 @@ Yaklaşık 20.000 satır içeren bir veri seti elde edilmiştir. Bu veri setine 
 
 ## 3. Kullanılan Modeller
 
-Projede hava durumu tahmini için aşağıdaki regresyon modelleri kullanılmıştır:
+Projede hava durumu tahmini için aşağıdaki regresyon modelleri ve algoritmalar kullanılmıştır:
 1. **Linear Regression**
 2. **Random Forest Regressor**
 3. **Passive Aggressive Regressor**
@@ -145,8 +145,6 @@ Random Forest modeli, tahmin sonuçlarını gerçek değerlere oldukça yakın y
 
 ### 3. Passive Aggressive:
 Passive Aggressive modelinde, tahmin edilen değerlerin çoğunluğu gerçek değerlere yakın olsa da, bu modelde daha fazla sapma gözlenmiştir. Bu model, doğrusal ilişkileri öğrenmede etkin olabilir ancak, veri setindeki karmaşık yapılar ve doğrusal olmayan ilişkiler karşısında daha zayıf kalmıştır.
-
-# KMeans Algoritması Sonuçları ve Silhouette Skoru Yorumları
 
 ### 4. KMeans Algoritması
 
