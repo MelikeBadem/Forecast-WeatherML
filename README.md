@@ -133,7 +133,7 @@ Aşağıdaki görsellerde, sıcaklık ile çeşitli hava durumu özellikleri ara
 
 # Model Performansı ve Sonuçlar
 
-Bu proje, farklı regresyon modellerinin (Linear Regression, Random Forest, ve Passive Aggressive) IMDb puanını tahmin etme performansını karşılaştırmaktadır. Aşağıda, her modelin gerçek değerler ile tahmin edilen değerler arasındaki ilişkisi ve doğruluk oranları ile ilgili analizler bulunmaktadır.
+Bu proje, farklı regresyon modellerinin (Linear Regression, Random Forest, ve Passive Aggressive) ve Kmeans ile sıcaklık tahmini yapılmaya çalışılmıştır.
 
 ## Modeller ve Performans Analizi
 
@@ -174,7 +174,7 @@ KMeans algoritması ile elde edilen **Silhouette skoru** 0 ile 1 arasında bir d
 
 ![image](https://github.com/user-attachments/assets/74d62da0-9aea-45ba-8baa-62b24858308d)
 
-![image](https://github.com/user-attachments/assets/0f739f6f-2280-4296-85a0-7ae603535d59)
+![image](https://github.com/user-attachments/assets/17b4cdcf-ab61-4e38-bd15-45be50cf1a9a)
 
 
 Grafiklerde, her bir modelin **gerçek değerler** ile **tahmin edilen değerler** arasındaki ilişkiyi gösteren görseller bulunmaktadır. Kırmızı kesikli çizgi, tahminlerin ideal olarak yer alması gereken doğrusal ilişkiyi temsil etmektedir.
@@ -184,8 +184,9 @@ Grafiklerde, her bir modelin **gerçek değerler** ile **tahmin edilen değerler
 - **Random Forest**, verilen veri setindeki karmaşıklıkları en iyi şekilde öğrenmiş ve doğrusal olmayan ilişkileri etkili bir biçimde modelleyebilmiştir.
 - **Linear Regression** modelinde doğrusal ilişkiler gözlemlense de, karmaşık veri yapıları için yetersiz kalmıştır.
 - **Passive Aggressive** modelinde ise, doğrusal ilişkilerle tahmin yapabilme yeteneği sınırlıdır ve daha fazla sapma gözlenmiştir.
+- **Kmeans Algoritması** , veri setini belirli sayıda kümeye ayırmada oldukça başarılı olmuştur. Kümeleme sırasında, verinin doğal yapısındaki benzerlikleri ve farklılıkları etkili bir şekilde yakalayabilmiştir.
 
-Bu proje, farklı regresyon modellerinin karşılaştırılmasını sağlamakta olup, Random Forest modelinin doğruluk oranı açısından en başarılı sonuçları verdiğini ortaya koymaktadır.
+Bu proje, farklı regresyon modelleri ve kümeleme modelinin karşılaştırılmasını sağlamakta olup, Random Forest modelinin doğruluk oranı açısından en başarılı sonuçları verdiğini ortaya koymaktadır.
 
 
 ---
