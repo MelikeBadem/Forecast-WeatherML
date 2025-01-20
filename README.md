@@ -175,5 +175,5 @@ Bu proje, farklı regresyon modellerinin karşılaştırılmasını sağlamakta 
 ## 9. Youtube Videosu
 
 Proje detaylarını görmek için aşağıdaki videoyu izleyebilirsiniz:  
-[Proje Videosu](https://youtu.be/G6E1wbuEHT4?si=8V3TfBL0xRKiFBmG)
+[Proje Videosu](https://www.youtube.com/watch?v=ISuI-ZEry_Y)
 
